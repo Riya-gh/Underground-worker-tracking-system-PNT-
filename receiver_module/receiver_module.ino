@@ -49,7 +49,7 @@ void setup() {
   SPI.begin(LORA_SCK, LORA_MISO, LORA_MOSI, LORA_CS);
   LoRa.setPins(LORA_CS, LORA_RST, LORA_IRQ);
 
-  if (!LoRa.begin(433E6)) {
+  if (!LoRa.begin(868E6)) {
     display.println("LoRa init failed!");
     display.display();
     while (true);
